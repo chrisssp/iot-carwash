@@ -1,27 +1,70 @@
-# IoTPractica
+<h1 align="center">IoT Car Wash — Real-Time Car Wash Phase Monitoring System</h1>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+<p align="center">
+  <img src="https://img.shields.io/badge/Angular-17-DD0031?logo=angular&logoColor=white" alt="Angular">
+  <img src="https://img.shields.io/badge/TypeScript-5.2-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/License-GPL_v3-0298c3?logo=gnu&logoColor=white" alt="GPL v3">
+  <img src="https://img.shields.io/badge/Status-Active-2ea44f" alt="Active">
+</p>
 
-## Development server
+<p align="center">
+  <em>Web interface for monitoring automatic car wash phases using ultrasonic sensors and LED indicators.</em>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<p align="center">
+  <a href="README.md">🇬🇧 English</a> · <a href="README.es.md">🇪🇸 Español</a>
+</p>
 
-## Code scaffolding
+---
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## About IoT Car Wash
 
-## Build
+A real-time monitoring dashboard for an automatic car wash system. Three ultrasonic sensors detect vehicle position across wash, rinse, and dry phases. LED indicators light up to show the active phase, and distance measurements are visualized through interactive sliders.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Ecosystem
 
-## Running unit tests
+| Component | Repository | Stack |
+|-----------|-----------|-------|
+| Frontend | [chrisssp/iot-carwash](https://github.com/chrisssp/iot-carwash) | Angular 17, TypeScript |
+| Backend API | [chrisssp/iot-carwash-api](https://github.com/chrisssp/iot-carwash-api) | Spring Boot 3, Java 17, MongoDB |
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Features
 
-## Running end-to-end tests
+- Real-time ultrasonic distance monitoring (3 sensors)
+- Visual phase detection: washing (blue), rinsing (green), drying (red)
+- Interactive distance sliders with car position indicators
+- 1-second polling for live updates
+- Dark-themed responsive UI
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Quick Start
 
-## Further help
+### Prerequisites
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Node.js 18+
+- Angular CLI 17+
+- Arduino-compatible microcontroller with ultrasonic sensors and LEDs
+
+### Setup
+
+```bash
+git clone https://github.com/chrisssp/iot-carwash.git
+cd iot-carwash
+npm install
+ng serve
+```
+
+The application runs on `http://localhost:4200` and expects the API at `http://localhost:8080`.
+
+## Contributing
+
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for branch naming, commit conventions, and PR workflow.
+
+## License
+
+This project is licensed under the GPL v3 — see the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+  <sub>Built with ❤️ · 2026</sub>
+</p>
